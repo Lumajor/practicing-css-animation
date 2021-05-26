@@ -1,0 +1,1 @@
+(()=>{const t=t=>{document.querySelectorAll("."+t).forEach((t=>{t.classList.forEach((e=>{"visible"==e?t.classList.remove("visible"):t.classList.add("visible")}))}))};document.addEventListener("click",(e=>{e.target.matches("#animationButton")&&t("animationItem")}))})();
