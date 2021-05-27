@@ -15,8 +15,23 @@ const openMenu = (() => {
     return  { buttonClick }
 })();
 
+const carouselController = (() => {
+    const moveRight = () => {
+        console.log('moving right...')
+        console.log(document.getElementById('carousel').children)
+    }
+
+    return { moveRight }
+})
+
 document.addEventListener('click', (e) => {
     if (e.target.matches("#animationButton")) {
         openMenu.buttonClick('animationItem');
+    }
+})
+
+carouselContainer.addEventListener('click', (e) => {
+    if (e.target.matches("#rightArrow")) {
+        console.log('yeet')
     }
 })
